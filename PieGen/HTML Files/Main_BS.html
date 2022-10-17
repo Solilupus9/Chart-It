@@ -2,8 +2,7 @@
 <html>
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4bb5f20919.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="">
     <!--For icon-->
@@ -15,9 +14,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Chart-It</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         img {
             height: fit-content;
@@ -42,6 +39,7 @@
             width: 100%;
             opacity: 0;
             transition: 0.5s ease;
+            border-radius: 30px;
         }
 
         .carousel-item:hover .overlay {
@@ -58,9 +56,12 @@
             -ms-transform: translate(-50%, -50%);
         }
         body{
-            background: linear-gradient(45deg, rgb(225, 5, 152) 0%, rgba(225, 5, 34, 0) 70%) repeat scroll 0% 0%, linear-gradient(135deg, rgb(26, 1, 117) 10%, rgba(49, 5, 209, 0) 80%) repeat scroll 0% 0%, linear-gradient(225deg, hsla(179, 91%, 45%, 1) 10%, rgba(10, 219, 216, 0) 80%) repeat scroll 0% 0%, rgba(0, 0, 0, 0) linear-gradient(315deg, rgb(189, 5, 245) 100%, rgba(9, 245, 5, 0) 70%) repeat scroll 0% 0%;
-            background-size:100% 200%;
+            background: linear-gradient(45deg, hsla(346, 96%, 45%, 1) 0%, rgba(225, 5, 34, 0) 70%) repeat scroll 0% 0%, linear-gradient(135deg, rgb(53, 3, 180) 10%, rgba(49, 5, 209, 0) 80%) repeat scroll 0% 0%, linear-gradient(225deg, hsla(179, 81%, 45%, 1) 10%, rgba(10, 219, 216, 0) 80%) repeat scroll 0% 0%, rgba(0, 0, 0, 0) linear-gradient(315deg, hsla(119, 96%, 49%, 1) 100%, rgba(9, 245, 5, 0) 70%) repeat scroll 0% 0%;
             background-repeat:no-repeat;
+            overflow-x:hidden;
+        }
+        a{
+            text-decoration: none;
         }
     </style>
 </head>
@@ -68,9 +69,9 @@
 <body>
     <!--LOGO-->
     <div class="container-fluid">
-        <div class="display-1 text-center mt-4 mb-4" style="font-family: Rubik;font-size:20vw;color:rgb(0, 220, 26)">Chart-It
-        </div>
+        <div class="display-1 text-center mt-4 mb-4" style="font-family: Rubik;font-size:20vw;color:rgb(0, 220, 26)">Chart-It</div>
     </div>
+
     <!--NAVBAR-->
     <div class="container-fluid">
         <nav class="navbar navbar-expand-md bg-info navbar-light" style="border-radius:30px">
@@ -91,43 +92,44 @@
             </div>
         </nav>
     </div>
+
     <div class="row justify-content-center">
         <div class="col-md-10 my-4">
             <!--SLIDESHOW-->
-            <div id="car" class="carousel slide carousel-fade rounded" data-bs-ride="carousel">
+            <div id="car" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <!--carousel-->
                 <div class="carousel-inner" style="height:50vw">
                     <!--PIE CHART-->
                     <div class="carousel-item active" data-bs-interval="5000">
-                        <img src="../Images/chart1.png" alt="Pie Chart.jpg" class="d-block rounded img" style="width: 100%;height: 50vw;">
+                        <img src="../Images/chart1.png" alt="Pie Chart.jpg" class="d-block img-fluid" style="width: 100%;height: 48vw;border-radius: 30px;">
                         <div class="overlay bg-light">
                             <div class="display-1 txt text-dark text-center">Pie Chart</div>
                         </div>
                     </div>
                     <!--LINE CHART-->
                     <div class="carousel-item" data-bs-interval="5000">
-                        <img src="../Images/chart2.jpg" alt="Line chart.jpg" class="d=block rounded" style="width:100%;height: 50vw;">
+                        <img src="../Images/chart2.jpg" alt="Line chart.jpg" class="d=block img-fluid" style="width:100%;height: 48vw;border-radius: 30px;">
                         <div class="overlay bg-light">
                             <div class="display-1 txt text-dark text-center">Line Chart</div>
                         </div>
                     </div>
                     <!--DOUGHNUT CHART-->
                     <div class="carousel-item" data-bs-interval="5000">
-                        <img src="../Images/chart3.jpg" alt="Doughnut chart.jpg" class="d=block rounded" style="width:100%;height: 50vw;">
+                        <img src="../Images/chart3.jpg" alt="Doughnut chart.jpg" class="d=block img-fluid" style="width:100%;height: 48vw;border-radius: 30px;">
                         <div class="overlay bg-light">
                             <div class="display-1 txt text-dark text-center">Doughnut Chart</div>
                         </div>
                     </div>
                     <!--BAR CHART-->
                     <div class="carousel-item" data-bs-interval="5000">
-                        <img src="../Images/chart4.jpg" alt="Bar chart.jpg" class="d=block rounded" style="width:100%;height: 50vw;">
+                        <img src="../Images/chart4.jpg" alt="Bar chart.jpg" class="d=block img-fluid" style="width:100%;height: 48vw;border-radius: 30px;">
                         <div class="overlay bg-light">
                             <div class="display-1 txt text-dark text-center">Bar Chart</div>
                         </div>
                     </div>
                     <!--POLAR AREA CHART-->
                     <div class="carousel-item" data-bs-interval="5000">
-                        <img src="../Images/chart5.png" alt="Line chart.jpg" class="d=block rounded" style="width:100%;height: 50vw;">
+                        <img src="../Images/chart5.png" alt="Line chart.jpg" class="d=block" style="width:100%;height: 50vw;border-radius: 30px;">
                         <div class="overlay bg-light">
                             <div class="display-1 txt text-dark text-center">Polar Area Chart</div>
                         </div>
@@ -136,11 +138,12 @@
             </div>
         </div>
     </div>
+
     <!--CHARTS ROW 1-->
     <div class="row">
         <!--PIE CHART-->
         <div class="col-md-3" id="charts">
-            <a href="" style="text-decoration: none;">
+            <a href="#PCmodal" style="text-decoration: none;" data-bs-target="#PCmodal" data-bs-toggle="modal">
                 <div class="card border-2">
                     <div class="card-header text-center border-bottom-0 text-dark h3" style="background-color: white;font-family: Montserrat;"> Pie Chart</div>
                     <div class="card-body">
@@ -151,7 +154,7 @@
         </div>
         <!--LINE CHART-->
         <div class="col-md-3">
-            <a href="" style="text-decoration: none;">
+            <a href="#LCmodal" style="text-decoration: none;" data-bs-target="#LCmodal" data-bs-toggle="modal">
                 <div class="card border-2">
                     <div class="card-header text-center border-bottom-0 text-dark h3" style="background-color: white;font-family: Montserrat;">Line Chart</div>
                     <div class="card-body">
@@ -162,7 +165,7 @@
         </div>
         <!--DOUGHNUT CHART-->
         <div class="col-md-3">
-            <a href="" style="text-decoration: none;">
+            <a href="#DCmodal" style="text-decoration: none;" data-bs-target="#DCmodal" data-bs-toggle="modal">
                 <div class="card border-2">
                     <div class="card-header text-center border-bottom-0 text-dark h3" style="background-color: white;font-family: Montserrat;">Doughnut Chart</div>
                     <div class="card-body">
@@ -185,11 +188,12 @@
             </div>
         </div>
     </div>
+
     <!--CHARTS ROW 2-->
     <div class="row">
         <!--BAR CHART-->
         <div class="col-md-3 mt-4 offset-md-1">
-            <a href="" style="text-decoration: none;">
+            <a href="#BCmodal" style="text-decoration: none;" data-bs-target="#BCmodal" data-bs-toggle="modal">
                 <div class="card border-2">
                     <div class="card-header text-center border-bottom-0 text-dark h3" style="background-color: white;font-family: Montserrat;">Bar Chart</div>
                     <div class="card-body">
@@ -200,7 +204,7 @@
         </div>
         <!--POLAR AREA CHART-->
         <div class="col-md-3 mt-4 offset-md-1">
-            <a href="" style="text-decoration: none;">
+            <a href="#PACmodal" style="text-decoration: none;" data-bs-target="#PACmodal" data-bs-toggle="modal">
                 <div class="card border-2">
                     <div class="card-header text-center border-bottom-0 text-dark h3" style="background-color: white;font-family: Montserrat;">Polar Area Chart</div>
                     <div class="card-body">
@@ -210,6 +214,85 @@
             </a>
         </div>
     </div>
+
+    <!--MODALS-->
+    <!--PIE CHART MODAL-->
+    <div class="modal fade" id="PCmodal">
+        <div class="modal-dialog modal-dialog-centered" style="width:24vw;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-dark" style="font-family: Arvo;">Select number of inputs:</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body justify-content-center">
+                    <a href="../Charts/PIECHART X3 INPUT/index.html"><button type="button" class="btn text-warning btn-outline-warning" style="width:10vw;">3</button></a>
+                    <a href="../Charts/pie chart x15/index.html"><button type="button" class="btn btn-outline-warning text-warning" style="width:10vw;margin-left: 1vw;">15</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--LINE CHART MODAL-->
+    <div class="modal fade" id="LCmodal">
+        <div class="modal-dialog modal-dialog-centered" style="width:24vw;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-dark" style="font-family: Arvo;">Select number of inputs:</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body justify-content-center">
+                    <a href="../Charts/LINE X3/index.html"><button type="button" class="btn text-warning btn-outline-warning" style="width:10vw;">3</button></a>
+                    <a href="../Charts/line x15/index.html"><button type="button" class="btn btn-outline-warning text-warning" style="width:10vw;margin-left: 1vw;">15</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--DOUGHNUT CHART MODAL-->
+    <div class="modal fade" id="DCmodal">
+        <div class="modal-dialog modal-dialog-centered" style="width:24vw;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-dark" style="font-family: Arvo;">Select number of inputs:</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body justify-content-center">
+                    <a href="../Charts/DOUGHNUT X3/index.html"><button type="button" class="btn text-warning btn-outline-warning" style="width:10vw;">3</button></a>
+                    <a href="../Charts/doughnut x15/index.html"><button type="button" class="btn btn-outline-warning text-warning" style="width:10vw;margin-left: 1vw;">15</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--BAR CHART MODAL-->
+    <div class="modal fade" id="BCmodal">
+        <div class="modal-dialog modal-dialog-centered" style="width:24vw;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-dark" style="font-family: Arvo;">Select number of inputs:</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body justify-content-center">
+                    <a href="../Charts/BAR X3/index.html"><button type="button" class="btn text-warning btn-outline-warning" style="width:10vw;">3</button></a>
+                    <a href="../Charts/bar x15/index.html"><button type="button" class="btn btn-outline-warning text-warning" style="width:10vw;margin-left: 1vw;">15</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--POLAR AREA CHART MODAL-->
+    <div class="modal fade" id="PACmodal">
+        <div class="modal-dialog modal-dialog-centered" style="width:24vw;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-dark" style="font-family: Arvo;">Select number of inputs:</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body justify-content-center">
+                    <a href="../Charts/POLARAREA X3/index.html"><button type="button" class="btn text-warning btn-outline-warning" style="width:10vw;">3</button></a>
+                    <a href="../Charts/polar area x15/index.html"><button type="button" class="btn btn-outline-warning text-warning" style="width:10vw;margin-left: 1vw;">15</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
     <div class="row">
         <div class="col-md-12 mt-4 mb-2">
             <div class="card border-2 text-center">
@@ -226,11 +309,12 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid mt-5 text-center">
         <i class="fab fa-facebook-f" style="color:blue;"></i>
         <i class="fab fa-twitter mx-5" style="color:#55acee;"></i>
-        <i class="fab fa-instagram" style="color:white;"></i>
-        <p id="copyr">© Copyright 2022 Chart.gen</p>
+        <i class="fab fa-instagram" style="color:rgb(255, 2, 242);"></i>
+        <p id="copyr" style="color: white;">© Copyright 2022 Chart.gen</p>
     </div>
 </body>
 
