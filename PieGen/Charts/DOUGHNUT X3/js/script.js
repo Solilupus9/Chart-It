@@ -16,7 +16,7 @@ console.log(data1new);
 
 let ctx = document.getElementById('myChart').getContext('2d');
 let labels = [data1text.value,data2text.value,data3text.value];
-let colorHex = ['#FB3640', '#EFCA08', '#43AA8B', '#253D5B', '#253D5B'];
+let colorHex = ['#FB3640', '#EFCA08', '#43AA8B'];
 
 let myChart = new Chart(ctx, {
     type: 'doughnut',

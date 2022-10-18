@@ -40,14 +40,14 @@ console.log(data1new);
 
 let ctx = document.getElementById('myChart').getContext('2d');
 let labels = [data1text.value,data2text.value,data3text.value];
-let colorHex = ['#FB3640', '#EFCA08', '#43AA8B', '#253D5B', '#FF865E','#E4AEC5','#243D25','#F07DEA','#EFEFEF','#FFAE6D','#483838','#E0D98C','#FEC260','#FF1E00',
-'#7DCE13'];
+let colorHex = ['#FB3640', '#EFCA08', '#43AA8B', '#2463AF', '#FF5E5E','#E4AEC5','#243D25','#F07DEA','#969594','#f97304','#682727','#E0D98C','#63EDC1','#B70101','#7DCE13'];
+
 
 let myChart = new Chart(ctx, {
     type: 'polarArea',
     data: {
       datasets: [{
-        data: [data1.value,data2.value,data3.value,data3.value,data4.value,data5.value,data6.value,data7.value,data8.value,data9.value,data10.value,data12.value,
+        data: [data1.value,data2.value,data3.value,data4.value,data5.value,data6.value,data7.value,data8.value,data9.value,data10.value,data11.value,data12.value,
           data13.value,data14.value,data15.value],
         backgroundColor: colorHex
       }],
@@ -94,7 +94,7 @@ let myChart = new Chart(ctx, {
 
 
 function updateChart(){
-  var updateValues = [data1.value,data2.value,data3.value,data3.value,data4.value,data5.value,data6.value,data7.value,data8.value,data9.value,data10.value,data12.value,
+  var updateValues = [data1.value,data2.value,data3.value,data4.value,data5.value,data6.value,data7.value,data8.value,data9.value,data10.value,data11.value,data12.value,
     data13.value,data14.value,data15.value];
   var updateLables = [data1text.value,data2text.value,data3text.value,data4text.value,data5text.value,data6text.value,data7text.value,data8text.value,data9text.value,
     data10text.value,data11text.value,data12text.value,data13text.value,data14text.value,data15text.value];
@@ -106,4 +106,16 @@ function updateChart(){
 document.getElementById('data1color').style.color = myChart.data.datasets[0].backgroundColor[0];
 document.getElementById('data2color').style.color = myChart.data.datasets[0].backgroundColor[1];
 document.getElementById('data3color').style.color = myChart.data.datasets[0].backgroundColor[2];
+document.getElementById('data4color').style.color = myChart.data.datasets[0].backgroundColor[3];
+document.getElementById('data5color').style.color = myChart.data.datasets[0].backgroundColor[4];
+document.getElementById('data6color').style.color = myChart.data.datasets[0].backgroundColor[5];
+document.getElementById('data7color').style.color = myChart.data.datasets[0].backgroundColor[6];
+document.getElementById('data8color').style.color = myChart.data.datasets[0].backgroundColor[7];
+document.getElementById('data9color').style.color = myChart.data.datasets[0].backgroundColor[8];
+document.getElementById('data10color').style.color = myChart.data.datasets[0].backgroundColor[9];
+document.getElementById('data11color').style.color = myChart.data.datasets[0].backgroundColor[10];
+document.getElementById('data12color').style.color = myChart.data.datasets[0].backgroundColor[11];
+document.getElementById('data13color').style.color = myChart.data.datasets[0].backgroundColor[12];
+document.getElementById('data14color').style.color = myChart.data.datasets[0].backgroundColor[13];
+document.getElementById('data15color').style.color = myChart.data.datasets[0].backgroundColor[14];
 //var data1color = myChart.data.datasets[0].backgroundColor[0];
