@@ -1,0 +1,176 @@
+/* About - Main */
+
+/* Navbar */
+.top-bar{
+    padding: 0 0 7%;
+}
+
+.piegen-logo{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.nav-item{
+    padding: 0 5%;
+}
+
+/* Title */
+#title{
+    background-color: #89239e;
+    color: #fff;
+}
+
+#title .container-fluid{
+    padding: 1% 15% 0;
+}
+
+.title-heading{
+    color: #effaff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4vw;
+    font-weight: bolder;
+    margin-bottom: 0%;
+    /*padding-bottom: 20px;*/
+}
+
+.col-lg-6{
+    position: relative;
+}
+
+.title-image{
+    width: 90%;
+    margin-top: 10%;
+    padding-left: 10%;
+    transform: rotate(20deg);
+    position: absolute;
+    z-index: 0;
+}
+
+/* Objective */
+#objective .container-fluid{
+    background-color: #fff;
+    position: relative;
+    padding: 5% 15%;
+    z-index: 2;
+}
+.objective-heading{
+    color: #3282B8;
+    margin-bottom: 3%;
+}
+
+.objective-detail{
+    color: #0F4C75;
+    font-weight: 510;
+}
+
+/* Methodology */
+#methodology{
+    padding: 3% 15% 2%;
+    background-color: #E7F6F2 ;
+}
+
+#methodology h3{
+    color: #3282B8;
+}
+
+#methodology h6{
+    color: #0F4C75;
+}
+
+.method-detail{
+    margin: 5% 10% 5%;
+    
+    margin-top: 3%;
+    font-size: larger;
+}
+
+.left{
+    margin-left: 175px;
+}
+
+.right{
+    text-align: end;
+    
+} 
+
+.icon{
+    color: #1B262C;
+    float: left;
+}
+
+.icon:hover{
+    color: #07b186 ;
+}
+
+.gif{
+    float: right;
+}
+
+.right ul{
+    list-style-position: inside;
+}
+
+/* Tools */
+#tools{
+    background-color: #fff;
+    padding: 3% 15%;
+    text-align: center;
+    color: #1B262C;
+}
+
+#tools .row{
+    margin-top: 5%;
+}
+
+.language-1:hover{
+    color: #F57328;
+}
+.language-2:hover{
+    color: #1363DF;
+}
+.language-3:hover{
+    color: #FFDE00;
+}
+
+/* Footer */
+
+#footer{
+    /* background-color:#DFF6FF ; */
+    text-align: center;
+}
+
+.social-icon{
+    margin: 20px;
+    
+}
+@media (max-width: 991px){
+    #title{
+        text-align: center;
+    }
+
+    .title-heading{
+        font-size: 4rem;
+        
+    }
+
+    .title-image{
+        position: static;
+    }
+
+    .icon{
+        float: none;
+    }
+
+    .left{
+        margin-left: 0;
+    }
+
+    .right{
+        text-align: left;
+    }
+
+    .gif{
+        float: none;
+    }
+}

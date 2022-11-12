@@ -1,0 +1,49 @@
+body{
+    background-color:white;
+}
+
+.header{
+    font-size: 10vw;
+    text-align: center;
+    color: rgb(50, 172, 3);
+	padding: 0px 0px 20px 0px;
+}
+
+.container {
+  height: 100vh;
+}
+
+.chart-wrapper {
+  width: 700x;
+  height: 700px;
+  margin: 0 auto;
+}
+.overlay{
+
+  height: 1100px;
+  padding-top: 200px;
+  padding-botton:200;
+  padding-left:200;
+}
+
+.pie_chart_content .container{
+  border radius :100px;
+  padding :0px;
+
+}
+
+.count_box{
+  border:none;
+
+
+}
+
+
+.pie_chart_content{
+  height:1100px;
+  width: 1900px;
+
+}
+.form-control:disabled,.form-control[readonly]{
+  background-color: inherit;
+}
